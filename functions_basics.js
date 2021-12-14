@@ -12,8 +12,8 @@ function toThePowerOf(collection, desiredPower) {
     return modifiedCollection;
 }
 function smallestAndLargest(collection) {
-    var smallest = 0;
-    var largest = 0;
+    var smallest = collection[0];
+    var largest = collection[0];
     collection.forEach(function (number) {
         if (number > largest) {
             largest = number;
@@ -27,7 +27,7 @@ function smallestAndLargest(collection) {
 var add_result = add(1, 1);
 var concat_result = concat('Hi', 'there');
 var toThePowerOf_result = toThePowerOf([1, 2, 3], 2);
-var smallestAndLargest_result = smallestAndLargest([2, 5, 3]);
+var smallestAndLargest_result = smallestAndLargest([-2, -5, -9, -1, -3]);
 console.log("add_result: ".concat(add_result, "\ntype ").concat(typeof add_result));
 console.log("concat_result: ".concat(concat_result, "\ntype ").concat(typeof concat_result));
 console.log("toThePowerOf_result: ".concat(toThePowerOf_result, "\ntype ").concat(typeof toThePowerOf_result));
