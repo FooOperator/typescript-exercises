@@ -15,8 +15,8 @@ function toThePowerOf(collection: Array<number>, desiredPower: number): Array<nu
 }
 
 function smallestAndLargest(collection: Array<number>): object {
-    let smallest: number = 0
-    let largest: number = 0
+    let smallest: number = collection[0]
+    let largest: number = collection[0]
     collection.forEach(number => {
         if (number > largest) {
             largest = number
@@ -30,7 +30,7 @@ function smallestAndLargest(collection: Array<number>): object {
 let add_result = add(1, 1)
 let concat_result = concat('Hi', 'there')
 let toThePowerOf_result = toThePowerOf([1, 2, 3], 2)
-let smallestAndLargest_result: object = smallestAndLargest([2, 5, 3])
+let smallestAndLargest_result: object = smallestAndLargest([-2, -5, -9, -1, -3])
 
 
 console.log(`add_result: ${add_result}\ntype ${typeof add_result}`)
